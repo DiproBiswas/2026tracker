@@ -1,0 +1,617 @@
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+  font-family: bellota; 
+
+}
+ul {
+  list-style: none;
+}
+/* Navbar */
+nav{
+      background-color: #bb91e0;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo{
+  font-size: 35px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Menu */
+.menubar{
+  float: right;
+  margin-right: 20px;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.197); /* Shadow kept */
+}
+
+.menulist{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.link{
+  font-size: 15px;
+  padding: 7px 13px;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: #6ebe68;
+;
+}
+
+/* Hamburger */
+.checkbtn{
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  color: #ffffff;
+}
+
+#check{
+  display: none;
+}
+
+
+body {
+   margin-top: 80px; 
+}
+
+
+
+
+/* Tablet */
+@media (max-width: 952px){
+  .logo{
+    font-size: 30px;
+    padding-left: 20px;
+
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px){
+
+  .checkbtn{
+    display: block;
+  }
+
+  .menubar{
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+        background-color: #bb91e0;
+
+    top: 80px;
+    left: -100%;
+    margin-left: 6px;
+    transition: all .5s;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.2); 
+  }
+
+  .menulist{
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+  }
+
+  #check:checked ~ .menubar{
+    left: -6px;
+  }
+}
+
+/* Remove shadow on large screens */
+@media (min-width: 701px) {
+  .menubar{
+    box-shadow: none;
+  }
+}
+
+
+
+
+
+
+
+/* first wave */
+
+.custom-shape-divider-bottom-1772451045 {
+   margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1772451045 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 116px;
+}
+
+.custom-shape-divider-bottom-1772451045 .shape-fill {
+    fill: #8cdbb9;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1772451045 svg {
+        width: calc(100% + 1.3px);
+        height: 64px;
+    }
+}
+
+
+
+
+/* second wave */
+ 
+.custom-shape-divider-bottom-test {
+   
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+}
+
+.custom-shape-divider-bottom-test svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 116px;
+}
+
+.custom-shape-divider-bottom-test .shape-fill {
+    
+     fill: #a5dcc6;
+}
+
+
+.custom-shape-divider-bottom-1772451045 .shape-fill_section_page {
+    fill: #ffffff;
+}
+
+
+
+.custom-shape-divider-bottom-test .shape-fill_section_page {
+    
+     fill: #ffffff;
+}
+
+
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-test svg {
+        width: calc(100% + 1.3px);
+        height: 64px;
+    }
+}
+
+
+.homepage {
+    background-color: #bb91e0; 
+}
+ .songs_page {
+  background-color: #8cdbb9;
+ }
+.movies_page {
+  background-color: #a295cd;
+}
+.tvseries_page {
+  background-color: #d093c6;
+}
+.books_page {
+  background-color: #90cbe4;
+}
+.money_page {
+  background-color: #b7d48e;
+}
+.games_page {
+  background-color: #a6dab0;
+}
+.gita_page {
+  background-color: #d5e2a6;
+}
+.travel_page {
+  background-color: #d4cb86;
+}
+.hero_image {
+  height: 500px;
+  width: auto;
+}
+.section_box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  
+}
+.unitry {
+  margin-top: 5px;
+}
+.big_digit {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+
+.taka_symbol {
+  font-weight: 100;
+}
+.section_list {
+  background-color: #ffffff;
+}
+.section_page_list_heading {
+  text-align: center;
+font-size: 50px;
+font-weight: bold;
+}
+.songs_section {
+  background-color: #8cdbb9;
+}
+.songs_big_digit, .songs_page_heading, .songs_big_text {
+  color: #8cdbb9;
+}
+
+.movies_section {
+  background-color: #a295cd;
+}
+.movies_big_digit, .movies_big_text {
+  color: #a295cd;
+}
+
+.tvseries_section {
+  background-color: #d093c6;
+}
+.tvseries_big_digit, .tvseries_big_text {
+  color: #d093c6;
+}
+
+.money_section {
+  background-color: #b7d48e;
+}
+.money_big_digit {
+  color: #b7d48e;
+}
+
+.college_section {
+  background-color: #d48e8e;
+}
+.college_big_digit {
+  color: #d48e8e;
+}
+
+.coaching_section {
+  background-color: #f7c49f;
+}
+.coaching_big_digit {
+  color: #f7c49f;
+}
+
+.games_section {
+  background-color: #a6dab0;
+}
+.games_big_digit {
+  color: #a6dab0;
+}
+
+.gita_section {
+  background-color: #d5e2a6;
+}
+.gita_big_digit {
+  color: #d5e2a6;
+}
+
+.inandout_section {
+  background-color: #d4cb86;
+}
+.inandout_big_digit {
+  color: #d4cb86;
+}
+
+.food_section {
+  background-color: #eaab84;
+}
+.food_big_digit {
+  color: #eaab84;
+}
+
+.records_section {
+  background-color: #a5dcc6;
+}
+.records_big_digit {
+  color: #a5dcc6;
+  font-size: 80px;
+}
+
+.books_section {
+  background-color: #90cbe4;
+}
+.books_big_digit {
+  color: #90cbe4;
+}
+.subject_content_box {
+  margin-top: 20px;
+  height: 300px;
+  width: 400px;
+  border-radius: 25px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-style: italic;
+  background-color: #fff;
+}
+
+
+.box_name {
+  font-weight: bold;
+  font-size: 18px;
+}
+.records_box_name {
+ text-align: center;
+}
+.view_button {
+  width: 80%;
+  border-radius: 25px;
+  height: 40px;
+  margin-top: 2px;
+}
+.username_container, .section_page_username_container {
+  margin-top: 150px;
+}
+
+.hero_description, .section_page_description {
+  font-style: italic;
+  color: #ffffff;
+}
+.username, .section_page_username {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+}
+.actual_title, .section_page_actual_title {
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+.section_list_heading, .completion_heading {
+text-align: center;
+font-size: 50px;
+
+}
+
+.section_list_description {
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.completion_heading {
+color: #671e94;
+}
+.completion_card_box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.completion_card {
+  background-color: #ffffff;
+  height: 300px;
+  width: 400px;
+  border-radius: 25px;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.username_container, .section_page_username_container {
+  text-align: center;
+  
+}
+.hero_description {
+  text-align: center;
+}
+.subject_content_box {
+  background-color: #fff;
+}
+
+.section_list_heading {
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+color: #fff;
+}
+.food_content_box {
+  height: 260px;
+  width: 150px;
+}
+.coaching_content_box {
+  height: 260px;
+  width: 150px;
+}
+.coaching_big_digit, .food_big_digit {
+  font-size: 60px;
+}
+
+.food_box_name {
+  font-size: 60px;
+  font-style: normal;
+}
+.footer {
+  margin-top: 100px;
+  text-align: center;
+  height: 100px;
+  color: white;
+}
+.records_content_box {
+  width: 80%;
+}
+
+.list {
+  margin-left: 13px;
+}
+ol {
+  margin-left: 40px;
+  
+}
+.ol_unique {
+  margin-left: 25px;
+}
+.date {
+  font-size: 20px;
+  font-weight: bold;
+  color: #62a387;
+  margin-left: -30px;
+}
+.money_date {
+  font-weight: bold;
+  font-size: 20px;
+}
+.earn {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
+.spend {
+    color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+.gamename, .out_desc {
+  font-size: 20px;
+}
+.out_date {
+  font-weight: bold;
+  color: #a09858;
+  font-size: 20px;
+}
+.foodemoji {
+  height: 70px;
+  width: 70px;
+}
+.newtext {
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  display: block;
+  margin-left: 16px;
+}
+
+
+@media (min-width: 921px) {
+
+
+  .username, .section_page_username {
+   font-size: 30px;
+  }
+.actual_title, .section_page_actual_title {
+  font-size: 70px;
+  margin-top: 20px;
+}
+.hero_description {
+  
+  padding-top: 40px;
+  
+  font-size: 20px;
+}
+.subject_page_description {
+  padding-right: 50%;
+    padding-top: 40px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.custom-shape-divider-bottom-1772451045 {
+ margin-top: 200px;
+}
+.hero_image_container {
+  position: absolute;
+  right: 1%;
+  top: 120px;
+}
+.section_page_description {
+  padding-right: 50%;
+  padding-top: 40px;
+  margin-left: 50px;
+  font-size: 20px;
+}
+.section_page_username_container {
+     margin-left: 50px;
+     padding-top: 80px;
+  }
+  .section_page_username {
+   font-size: 30px;
+  }
+ .section_page_username_container {
+  text-align: left;
+ }
+ .list, .newtext {
+  margin-left: 30px;
+ }
+ .foul {
+  padding-right: 500px;
+ }
+ 
+}
+
+
+
+@media (max-width: 920px) {
+
+.actual_title, .section_page_actual_title {
+  font-size: 50px;
+  margin-top: 20px;
+}
+.hero_description, .section_page_description {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+padding-top: 30px;
+padding-left: 30px;
+padding-right: 30px;
+font-size: 18px;
+}
+.subject_page_hero_image {
+  height: 350px;
+}
+.hero_image_container {
+  text-align: center;
+  padding-top: 40px;
+}
+.hero_image {
+  height: 300px;
+}
+
+}
